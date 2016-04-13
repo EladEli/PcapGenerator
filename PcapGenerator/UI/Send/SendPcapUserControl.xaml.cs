@@ -3,13 +3,12 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Windows;
 using System.Windows.Controls;
-using PcapDotNet.Core;
 using PcapDotNet.Core.Extensions;
 using PcapGenerator.Calc;
 
 namespace PcapGenerator.UI.Send
 {
-    public partial class SendPcapUserControl : UserControl
+    public partial class SendPcapUserControl
     {
         public NetworkInterface [] _nics { get; set; }
         public SendPcapUserControl()
@@ -52,7 +51,7 @@ namespace PcapGenerator.UI.Send
                 }
 
             }
-            catch (System.IndexOutOfRangeException)
+            catch (IndexOutOfRangeException)
             {
                 MessageBox.Show("User Must Select A NIC");
             }
