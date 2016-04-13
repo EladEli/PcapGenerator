@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="PcapGenerator.UI.Send.SendPcapUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PcapGenerator.UI.Send"
+             mc:Ignorable="d" Width="435.511" Height="266.761">
+    <Grid>
+        <Button x:Name="BrowseButton" Content="Browse" HorizontalAlignment="Left" Margin="333,40,0,0" VerticalAlignment="Top" Width="75" Click="BrowseButton_Click"/>
+        <TextBox x:Name="PathBox" HorizontalAlignment="Left" Height="23" Margin="61,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" Text="Path"/>
+        <Button x:Name="GenerateButton" Content="Generate" HorizontalAlignment="Left" Margin="157,213,0,0" VerticalAlignment="Top" Width="75" Click="GenerateButton_Click"/>
+        <ListBox x:Name="NicList" HorizontalAlignment="Left" Margin="61,88,0,0" VerticalAlignment="Top" IsSynchronizedWithCurrentItem="True" Height="114" Width="270" />
+        <Label x:Name="NicLabel" Content="Please choose a Nic to send threw" HorizontalAlignment="Left" Margin="95,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="FileLabel" Content="Please choose a .Pcap file to read from " HorizontalAlignment="Left" Margin="95,9,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</UserControl>
