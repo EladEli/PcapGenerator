@@ -8,7 +8,7 @@ using PcapGenerator.Calc;
 
 namespace PcapGenerator.UI.Send
 {
-    public partial class SendPcapUserControl
+    public partial class SendPcapUserControl: UserControl
     {
         public NetworkInterface [] _nics { get; set; }
         public SendPcapUserControl()
