@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using System.Windows.Controls;
 using PcapGenerator.UI.Send;
 
 namespace PcapGenerator
@@ -9,7 +8,7 @@ namespace PcapGenerator
         public SendPcapUserControl _SendPcapWindow { get; set; }
         public MainWindow()
         {
-            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
             InitializeComponent();
             _SendPcapWindow = new SendPcapUserControl();
             DataContext = this;

@@ -23,7 +23,7 @@ namespace PcapGenerator.UI.Send
 
         private void BrowseButton_Click(object sender, RoutedEventArgs e)
         {
-            var browseWindow = new System.Windows.Forms.OpenFileDialog();
+            var browseWindow = new Microsoft.Win32.OpenFileDialog();
             browseWindow.ShowDialog();
             PathBox.Text = browseWindow.FileName;
         }
